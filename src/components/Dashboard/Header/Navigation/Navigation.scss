@@ -1,0 +1,46 @@
+.dashboard-nav {
+  font-size: 24px;
+  font-weight: bold;
+
+  &__text {
+    text-transform: uppercase;
+    color: #a9a99f;
+    margin-left: 10px;
+  }
+
+  &__list {
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+    & a {
+      text-decoration: none;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      display: block;
+      padding: 20px 0;
+    }
+
+    & i {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background-color: #f79237;
+    }
+
+    &:last-child {
+      background-color: #fff;
+    }
+
+    &:last-child a {
+      color: #000;
+    }
+  }
+}
