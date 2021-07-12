@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-spacing: 0px;
+  &__row{
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #cdcdcd;
+    background-color: #737373;
+    color: #fff;
+  }
+  &__column{
+    padding: 15px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border: 1px solid #cdcdcd;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    &.user{
+      color: #107100;
+    }
+    &.stopped{
+      color: #ff0000;
+    }
+    &.admin{
+      color: #F79237;
+    }
+  }
+}

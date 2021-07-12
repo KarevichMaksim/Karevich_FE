@@ -1,11 +1,10 @@
-import './Header.scss'
+import Login from '../../../styled/components/Login/index';
 
-export  function Header(){
+export function LoginHeader() {
     return (
-        <header className='logo'>
-            <img className='logo__img' src="https://www.geoptimise.net/images/geoptimise_flat.png"
-                 alt="Company's logo"/>
-            <p className='logo__description'>Find more of your best customers.</p>
-        </header>
+        <Login.Header>
+            <Login.Image src="https://www.geoptimise.net/images/geoptimise_flat.png" alt="Company's logo"/>
+            <Login.ImageDescription>Find more of your best customers.</Login.ImageDescription>
+        </Login.Header>
     )
 }

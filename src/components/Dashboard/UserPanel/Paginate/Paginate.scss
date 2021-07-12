@@ -1,0 +1,20 @@
+.paginate{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  &__page{
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    &.active {
+      background-color: #158cba;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+}

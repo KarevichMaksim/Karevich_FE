@@ -1,30 +1,15 @@
 import './Login.scss';
-import {Header} from "./Header/Header";
-import {LoginForm} from "./Forms/LoginForm/LoginForm";
-import {ResetForm} from "./Forms/ResetForm/ResetForm";
-import {Footer} from "./Footer/Footer";
-import {useState} from "react";
+import {LoginHeader} from "./Header/Header";
+import {Footer} from "./Footer/Footer"
+import {LoginMain} from "./Mains/LoginMain";
+import Login from "../../styled/components/Login";
 
-export function Login() {
-    const [resetPassword, setResetPassword] = useState();
-
-    const showToggle = resetPassword &&
-        <div onClick={() => setResetPassword(false)} className='main__toggle'><i className="fas fa-pencil-alt" />Login
-        </div>;
-    const passwordReset = !resetPassword &&
-        <div onClick={() => setResetPassword(true)} className='main__reset-pass'>Forgot your password?</div>;
-
-    const formControll = resetPassword ? <ResetForm /> : <LoginForm/>
-
+export function LoginPage() {
     return (
-        <div className='container'>
-            <Header/>
-            <main className='main'>
-                {showToggle}
-                {formControll}
-                {passwordReset}
-            </main>
+        <Login>
+            <LoginHeader/>
+            <LoginMain />
             <Footer/>
-        </div>
+        </Login>
     )
 }
